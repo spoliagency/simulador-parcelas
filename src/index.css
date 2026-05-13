@@ -37,3 +37,9 @@ input[type="range"] {
 .animate-pulse-value {
   animation: pulse-value 0.25s ease-out;
 }
+
+@keyframes particle-fly {
+  0%   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+  60%  { opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0.4); opacity: 0; }
+}
