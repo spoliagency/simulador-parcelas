@@ -14,7 +14,9 @@ export default function ClienteScreen({
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold text-gray-900">Simulador de Parcelas</h1>
-          <p className="text-xs text-muted">Spoli Agency</p>
+          {consultor.nomeLoja && (
+            <p className="text-xs text-muted">{consultor.nomeLoja}</p>
+          )}
         </div>
       </div>
 
